@@ -52,7 +52,7 @@ public class UserController {
 
     @PostMapping
     @ApiOperation(value = "Creates a new user",
-            notes = "")
+            notes = "Creates a new User by passed following json \"{\"name\":\"New User name\", \"age\": 21 }\" where 'name' is required parameter.")
     @ApiResponses({
             @ApiResponse(code = 200, message = "If user was created", response = UserDTO.class),
             @ApiResponse(code = 400, message = "If user wasn't created")
